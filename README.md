@@ -1,6 +1,6 @@
 ## Enterprise RAG Assistant ##
 
-Um assistente inteligente de recuperação de documentos (RAG) desenvolvido em Python, projetado para responder a perguntas corporativas com base estritamente em dados internos, eliminando alucinações da IA.
+Um assistente inteligente de recuperação de documentos (RAG) desenvolvido em Python, projetado para responder a perguntas corporativas com base estritamente em dados internos, reduzindo alucinações da IA.
 
 ---
 
@@ -8,7 +8,7 @@ Um assistente inteligente de recuperação de documentos (RAG) desenvolvido em P
 
 ```mermaid
 graph TD
-    A[Documentos PDF/TXT] -->|Ingestão & Embedding| B[(Base Vetorial ChromaDB)]
+    A[Documentos TXT] -->|Ingestão & Embedding| B[(Base Vetorial ChromaDB)]
     C[Pergunta do Utilizador] -->|Busca Semântica| B
     B -->|Contexto Relevante| D[LLM / OpenAI]
     C -->|Prompt + Contexto| D
